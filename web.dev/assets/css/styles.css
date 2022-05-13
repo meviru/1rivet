@@ -164,6 +164,17 @@ a:hover {
 }
 
 /* ------------------------ */
+/* Section CTA */
+/* ------------------------ */
+.section-cta {
+    margin: 40px 0 0;
+}
+
+.section-cta .btn {
+    width: 225px;
+}
+
+/* ------------------------ */
 /* Hero Section */
 /* ------------------------ */
 
@@ -222,6 +233,13 @@ a:hover {
     margin-bottom: 2.5rem;
     padding: 2.5rem 1.875rem;
     border: 1px solid #ededed;
+    transition: 0.25s ease all;
+}
+
+.card:hover {
+    background: #ffffff;
+    border-color: transparent;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
 }
 
 .card-title__image {
