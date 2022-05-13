@@ -1,1 +1,3 @@
-# 1rivet
+# 1Rivet
+
+Summer Internship 2022
