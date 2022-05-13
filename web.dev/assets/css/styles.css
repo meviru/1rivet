@@ -1,0 +1,237 @@
+/* ------------------------ */
+/* Global */
+/* ------------------------ */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #313131;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* ------------------------ */
+/* Container, Row and Grid */
+/* ------------------------ */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+/* ------------------------ */
+/* Flex */
+/* ------------------------ */
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* ------------------------ */
+/* Text Utilities */
+/* ------------------------ */
+
+.text-center {
+    text-align: center;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.text-primary {
+    color: #49ad09;
+}
+
+/* ------------------------ */
+/* Buttons */
+/* ------------------------ */
+
+.btn {
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259),
+        0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05),
+        0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+}
+
+.btn-primary {
+    background-color: #49ad09;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #4d9f18;
+}
+
+/* ------------------------ */
+/* Header */
+/* ------------------------ */
+
+.header {
+    position: absolute;
+    inset: 0 0 auto;
+    padding: 30px 0;
+}
+
+/* ------------------------ */
+/* Navigation */
+/* ------------------------ */
+
+.nav__item {
+    margin-right: 45px;
+}
+
+.nav__link:not(.btn):hover {
+    color: #49ad09;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+/* ------------------------ */
+/* Section Title */
+/* ------------------------ */
+.section-title {
+    margin: 140px 0 65px 0;
+}
+
+.section-title__text {
+    font-size: 2.8125rem;
+    margin-top: 1.5625rem;
+}
+
+/* ------------------------ */
+/* Hero Section */
+/* ------------------------ */
+
+.hero {
+    height: 100vh;
+    background: url("../images/banner.jpg") no-repeat center center/cover;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.hero-content__title {
+    font-size: 4.875rem;
+    line-height: 1.1;
+    font-weight: bold;
+    letter-spacing: -0.2rem;
+}
+
+.hero-content__desc {
+    margin: 2.5rem 0 3.75rem;
+}
+
+.hero-content__cta .btn {
+    width: 225px;
+    margin-right: 2rem;
+}
+/* ------------------------ */
+/* Logos Section */
+/* ------------------------ */
+
+.logos-wrapper {
+    padding: 76px 0;
+}
+
+.item-logo {
+    display: inline-block;
+}
+
+/* ------------------------ */
+/* Specialization Section */
+/* ------------------------ */
+
+.our-special__grid {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.our-special__grid .row {
+    margin: 0 -20px;
+}
+
+.card {
+    border-radius: 5px;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 1.875rem;
+    border: 1px solid #ededed;
+}
+
+.card-title__image {
+    margin-right: 15px;
+}
+
+.card-desc__text {
+    margin: 30px 0;
+}
+
+.card-desc__link:hover {
+    color: #49ad09;
+}
