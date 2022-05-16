@@ -59,6 +59,13 @@ a:hover {
     padding: 0 20px;
 }
 
+.col-4 {
+    width: 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 20px;
+}
+
 /* ------------------------ */
 /* Spacing Utilities */
 /* ------------------------ */
@@ -116,6 +123,14 @@ a:hover {
     color: #49ad09;
 }
 
+.font-weight-normal {
+    font-weight: 500;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
 /* ------------------------ */
 /* Buttons */
 /* ------------------------ */
@@ -139,6 +154,18 @@ a:hover {
 
 .btn-primary:hover {
     color: #fff;
+    background-color: #4d9f18;
+}
+
+.btn-outline {
+    color: #313131;
+    border-color: #313131;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    color: #fff;
+    border-color: #4d9f18;
     background-color: #4d9f18;
 }
 
@@ -296,4 +323,153 @@ a:hover {
 .portfolio-card__link,
 .portfolio-card__link:hover {
     color: #49ad09;
+}
+
+/* ------------------------ */
+/* Testimonials Section */
+/* ------------------------ */
+
+.testimonial__wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding-top: 100px;
+}
+
+.testimonial__wrap:after {
+    position: absolute;
+    content: "";
+    inset: 0 0 0 0;
+    margin: auto;
+    width: 892px;
+    height: 540px;
+    z-index: -1;
+    background-color: #f2f2f2;
+}
+
+.testimonial__wrap .row {
+    margin: 0 -10px;
+}
+
+.testi-item {
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.testi-item__inner {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px 25px 35px 30px;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+}
+
+.testi-item__rating {
+    width: 95px;
+    height: 18px;
+    margin-bottom: 20px;
+    background: url("../images/rating.svg") repeat-x left center/contain;
+}
+
+.testi-item__heading,
+.test-item__user {
+    color: #32435c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.testi-item__content {
+    margin: 20px 0;
+    color: #93979e;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.testimonial__control {
+    width: 120px;
+    height: 66px;
+    padding: 0 8px;
+    border-radius: 50px;
+    margin: 60px auto 0;
+    background-color: #fff;
+}
+
+.testimonial__control--btn {
+    display: inline-flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.25s ease all;
+}
+
+.testimonial__control--btn .icon {
+    width: 30px;
+    margin: auto;
+    stroke: #313131;
+    transition: 0.25s ease all;
+}
+
+.testimonial__control--btn:hover {
+    background-color: #313131;
+}
+
+.testimonial__control--btn:hover .icon {
+    stroke: #fff;
+}
+
+/* ------------------------ */
+/* Pricing Section */
+/* ------------------------ */
+.our-pricing__grid .card {
+    padding: 50px 30px;
+    min-height: 510px;
+    margin-bottom: 0;
+}
+
+.our-pricing__grid .card:hover .btn {
+    color: #fff;
+    border-color: #49ad09;
+    background-color: #49ad09;
+}
+
+.card-heading {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+.card-price {
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+.card-listing__item {
+    position: relative;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-left: 28px;
+}
+
+.card-listing__item:before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZNJREFUSEu9lYtNw0AMhu0uABsAE3CXBYANygR0A+gEtBNQJgAmoEwAE8TuBukG7QI1cnSJLpdrcgkqkSJFiu///Dob4cQPnlgfegHGmNlkMrkREQMA+urDiMiHw2HNzF9dTh4FGGOmiPgCAJc9URYiMmfmdcwuCsiybCUij0PSJyIrZp6HZ1qAMeKVKCK+5nn+5EMaAJeWzyGeh7Yicu+nqwGw1hYAcPEXAAAURHRVR1V9aLcg4tsA8T0iaq2eu6KoI7DWvgPAQyJgLyK3zMxZli0ikA8imqmWD2AAuE4A1OLGGIOI3wBwHpxjIrIhQFothrgUEe2KM/cvRbw0JaLSeT+CBgARl3meL5yXP2pcpaXD89rHGCBM0U5E7jTPKljOB/d9JC1+AjZEVJ7pK3INUeMUzx2lXeSOS1ZCSm/iBW31hX/ZUi/azqmE3RJrui0R1QPyf0eFunPSYVfFOwYSm6SNLgqT6Yq+Shh+W72MgxaOD3OgqVuX1SjZ6LUQEV2Z0U3WmqYJM2iUSe/SH6XqHfoFSZHiGX1G8qgAAAAASUVORK5CYII=")
+        no-repeat center center/cover;
+}
+
+.card-listing__item + .card-listing__item {
+    margin-top: 10px;
+}
+
+.card-action {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.card-action .btn {
+    width: 225px;
 }
