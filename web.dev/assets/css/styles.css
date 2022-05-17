@@ -480,6 +480,10 @@ button {
     background-color: #49ad09;
 }
 
+/* ------------------------ */
+/* Pricing Card Design */
+/* ------------------------ */
+
 .card-heading {
     font-size: 1.875rem;
     font-weight: 500;
@@ -535,13 +539,14 @@ button {
 }
 
 .footer-column {
-    width: 25%;
-    flex: 0 0 25%;
+    width: 22%;
+    flex: 0 0 22%;
     padding: 0 20px;
 }
 
 .footer-column:first-child {
-    flex-grow: 1;
+    width: 34%;
+    flex: 0 0 34%;
 }
 
 .footer-title {
