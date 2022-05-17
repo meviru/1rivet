@@ -57,8 +57,8 @@ button {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1200px;
+    padding: 0 20px;
+    max-width: 1210px;
 }
 
 .row {
@@ -380,7 +380,11 @@ button {
     width: 100%;
     margin: 0 auto;
     max-width: 1170px;
-    padding-top: 100px;
+    padding-top: 70px;
+}
+
+#testimonial-slider {
+    padding: 15px 0;
 }
 
 .testimonial__wrap:after {
@@ -399,7 +403,6 @@ button {
 }
 
 .testi-item {
-    width: 33.33%;
     padding: 0 10px;
 }
 
@@ -407,7 +410,7 @@ button {
     border-radius: 5px;
     background-color: #fff;
     padding: 40px 25px 35px 30px;
-    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+    box-shadow: 0px 5px 10px rgba(49, 49, 49, 0.1);
 }
 
 .testi-item__rating {
@@ -436,7 +439,7 @@ button {
     height: 66px;
     padding: 0 8px;
     border-radius: 50px;
-    margin: 60px auto 0;
+    margin: 35px auto 0;
     background-color: #fff;
 }
 
@@ -445,8 +448,10 @@ button {
     position: relative;
     width: 50px;
     height: 50px;
+    border: none;
     border-radius: 50%;
     transition: 0.25s ease all;
+    background-color: transparent;
 }
 
 .testimonial__control--btn .icon {
@@ -564,6 +569,10 @@ button {
     font-size: 16px;
 }
 
+/* ------------------------ */
+/* Footer Social Icons */
+/* ------------------------ */
+
 .footer-social {
     margin-top: 60px;
 }
@@ -594,6 +603,10 @@ button {
     fill: #fff;
 }
 
+/* ------------------------ */
+/* Footer List Items */
+/* ------------------------ */
+
 .footer-list__item {
     margin-bottom: 20px;
 }
@@ -611,6 +624,10 @@ button {
     color: #49ad09;
     text-decoration: underline;
 }
+
+/* ------------------------ */
+/* Footer Subscribe Form */
+/* ------------------------ */
 
 .footer-form {
     width: 174px;
@@ -642,6 +659,10 @@ button {
     fill: inherit;
     display: block;
 }
+
+/* ------------------------ */
+/* Footer Bottom */
+/* ------------------------ */
 
 .footer-bottom {
     padding: 40px 0;

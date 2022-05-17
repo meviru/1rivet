@@ -237,7 +237,17 @@
                 <h2 class="section-title__text">What Customers Say</h2>
             </div>
             <div class="testimonial__wrap">
-                <div class="row align-items-center">
+                <div id="testimonial-slider">
+                    <div class="testi-item">
+                        <div class="testi-item__inner">
+                            <span class="testi-item__heading">Superb Work!</span>
+                            <p class="testi-item__content">Blessing welcomed ladyship she met humoured sir breeding her.
+                                Six
+                                curiosity day assurance bed necessary.</p>
+                            <div class="testi-item__rating"></div>
+                            <span class="test-item__user">Sabo Masties</span>
+                        </div>
+                    </div>
                     <div class="testi-item">
                         <div class="testi-item__inner">
                             <span class="testi-item__heading">Superb Work!</span>
@@ -270,7 +280,7 @@
                     </div>
                 </div>
                 <div class="testimonial__control d-flex align-items-center justify-content-between">
-                    <a href="javascript:void(0)" class="testimonial__control--btn testimonial__control--left">
+                    <button class="testimonial__control--btn testimonial__control--prev">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
                             width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -279,8 +289,8 @@
                             <line x1="5" y1="12" x2="9" y2="16" />
                             <line x1="5" y1="12" x2="9" y2="8" />
                         </svg>
-                    </a>
-                    <a href="javascript:void(0)" class="testimonial__control--btn testimonial__control--right">
+                    </button>
+                    <button class="testimonial__control--btn testimonial__control--next">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
                             width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -289,7 +299,7 @@
                             <line x1="15" y1="16" x2="19" y2="12" />
                             <line x1="15" y1="8" x2="19" y2="12" />
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -478,6 +488,26 @@
         </div>
     </footer>
     <!-- End: Footer -->
+    <!-- Start: Third Party Libraries -->
+    <script src="./assets/js/siema.min.js"></script>
+    <!-- End: Third Party Libraries -->
+    <!-- Start: Custom JS -->
+    <script>
+        const testimonailSlider = new Siema({
+            selector: '#testimonial-slider',
+            duration: 600,
+            perPage: 3,
+            loop: true,
+            draggable: true,
+            easing: 'ease-in-out',
+        });
+
+        const prev = document.querySelector('.testimonial__control--prev');
+        const next = document.querySelector('.testimonial__control--next');
+
+        prev.addEventListener('click', () => testimonailSlider.prev());
+        next.addEventListener('click', () => testimonailSlider.next());
+    </script>
 </body>
 
 </html>
